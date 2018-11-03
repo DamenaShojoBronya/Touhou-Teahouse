@@ -32,3 +32,22 @@ int main()
 
 	return 0;
 }
+
+/*
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	int x, n, flag = 0;
+	while (cin >> x >> n) {
+		if (n != 0) {
+			if (flag == 1) cout << " ";
+			cout << x*n << " " << n-1;
+			flag = 1;
+		}
+	}
+	if (flag == 0) cout << "0 0";
+
+	return 0;
+}
