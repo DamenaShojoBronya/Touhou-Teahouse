@@ -11,10 +11,10 @@
 	在一行中输出约会的时间，格式为 DAY HH:MM，其中 DAY 是某星期的 3 字符缩写，即 MON 表示星期一，TUE 表示星期二，WED 表示星期三，THU 表示星期四，FRI 表示星期五，SAT 表示星期六，SUN 表示星期日。题目输入保证每个测试存在唯一解。
 
 	输入样例：
-	3485djjkxh4hhGENsNAf3485djjkxh4hhGENNNNf3485djjkxh4hhGENNNNf
-	2984akDfkkkkggEdsbAp
-	s&hgsfdks&hgsfdks&hgsfdk
-	d&Hybcvnms&hgsfds
+	3485djDkxh4hhGE 
+	2984akDfkkkkggEdsb 
+	s&hgsfdk 
+	d&Hyscvnm
 	输出样例：
 	THU 14:04  */
 
@@ -29,7 +29,8 @@ int main()
 	cin >> str1 >> str2 >> str3 >> str4;
 
 	for (int i = 0; i < 60; i++) {
-		if (str1[i] == str2[i] && flag == 1){
+		if (str1[i] == str2[i] && flag == 1)
+		{
 			if (str1[i] >= '0'&&str1[i] <= '9') {
 				cout << "0" << str1[i] - '0' << ":"; break;
 			}
@@ -43,6 +44,8 @@ int main()
 				flag = 1;
 			}
 		}
+	}
+	for (int i = 0; i < 60; i++) {
 		if (str3[i] == str4[i]) {
 			if ((str3[i] >= 'a' && str3[i] <= 'z') || str3[i] >= 'A' && str3[i] <= 'Z') {
 				if (i > 10) { cout << i; break; }
