@@ -1,4 +1,4 @@
-/*²»Ö§³ÖĞ¡Êı*/
+/*ä¸æ”¯æŒå°æ•°*/
 
 #include<stdio.h>
 #include<math.h>
@@ -30,7 +30,7 @@ int ten_changing(int num,int system)
 	int result=0;
 	for(int i=0;num!=0;i++){
 		if((num-num/10*10)>=system){
-		printf("**ÇëÊäÈëÕıÈ·µÄ½øÖÆ!**");return -1;
+		printf("**è¯·è¾“å…¥æ­£ç¡®çš„è¿›åˆ¶!**");return -1;
 		}
 		result+=(num-num/10*10)*pow(system,i);
 		num/=10;
@@ -42,14 +42,14 @@ int main()
 {
 	int num=0,a=0,b=0;
 	
-	printf("ÇëÊäÈëÄúÏ£Íû×ª»¯µÄÊı×Ö:");
+	printf("è¯·è¾“å…¥æ‚¨å¸Œæœ›è½¬åŒ–çš„æ•°å­—:");
 	scanf("%d",&num);
-	printf("ÇëÊäÈëµ±Ç°Êı×ÖµÄ½øÖÆ:");
+	printf("è¯·è¾“å…¥å½“å‰æ•°å­—çš„è¿›åˆ¶:");
 	scanf("%d",&a);
-	printf("ÊäÈëÄúÏ£Íû×ª»¯µÄÄ¿±ê½øÖÆ (Èç¶ş½øÖÆÔòÊäÈë2):");
+	printf("è¾“å…¥æ‚¨å¸Œæœ›è½¬åŒ–çš„ç›®æ ‡è¿›åˆ¶ (å¦‚äºŒè¿›åˆ¶åˆ™è¾“å…¥2):");
 	scanf("%d",&b);
 	
-	if(a<=0||b<=0) {printf("×Ô¼ºÍæÈ¥!");return 0;}
+	if(a<=0||b<=0) {printf("è‡ªå·±ç©å»!");return 0;}
 	if(num==0) printf("0");
 	if(num<0) {num*=-1;printf("-");}
 	
@@ -60,7 +60,7 @@ int main()
 	
     if(b<=10) {system_changing(num,b);return 0;}
 	if(b<=32) nb_system_changing(num,b);
-	else printf("×Ô¼ºËãÈ¥!");
+	else printf("è‡ªå·±ç®—å»!");
 	
 	return 0;
 }
