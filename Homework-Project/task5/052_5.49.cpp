@@ -1,6 +1,6 @@
-﻿/*	5.49 (Longest common prefix) Write a program that prompts the user to
-enter two strings and displays the largest common prefix of the two
-strings. */
+﻿/*     (Longest common prefix) Write a program that prompts the user to
+	enter two strings and displays the largest common prefix of the two
+	strings.     */
 
 #include<string>
 #include<iostream>
