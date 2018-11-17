@@ -9,7 +9,7 @@ private:
 public:  
     cstring(const char* str){strcpy(s,str);}    
     friend cstring& operator +=(cstring& str1, const cstring& str2);
-	friend ostream& operator <<(ostream& output, const cstring&); 
+    friend ostream& operator <<(ostream& output, const cstring&); 
 };  
 
 cstring& operator +=(cstring& str1, const cstring& str2)    
