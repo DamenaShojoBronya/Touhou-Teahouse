@@ -2,9 +2,6 @@
 #include <string>   
 using namespace std;   
 
-class cstring;  
-ostream& operator<<(ostream &output, const cstring &s);
-
 class cstring  
 {
 private:
