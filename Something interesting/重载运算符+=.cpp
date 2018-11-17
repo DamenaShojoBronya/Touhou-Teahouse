@@ -28,6 +28,6 @@ int main()
     cstring str1("laozhu,"),str2("dongleba");  
     str1 += str2;   
     cout<<str1<<endl;
-	cout<<str2<<endl;
+    cout<<str2<<endl;
     return 0;  
 }  
