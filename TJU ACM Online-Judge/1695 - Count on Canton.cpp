@@ -4,6 +4,7 @@ using namespace std;
 int main()
 {
 	int n,a=1, b = 1,count=1;
+	
 	while (cin >> n) {
 		for (int i = 1; i < n; i++) {
 			b = i; a = i;
@@ -28,5 +29,6 @@ int main()
 		}
 	quit:continue;
 	}
+	
 	return 0;
 }
